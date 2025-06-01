@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 # Load Titanic dataset (for preprocessing reference only)
 @st.cache_data
 def load_data():
-    df = pd.read_csv()  # Ensure this file exists
+    df = pd.read_csv(https://raw.github.com/Vasanthkumar5648/Machine-Learing/main/Titanic%20ML%20predictive%20model/titanic-2.csv)  # Ensure this file exists
     df['Age'].fillna(df['Age'].median(), inplace=True)
     df.drop(columns=['Cabin'], inplace=True)
     df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
